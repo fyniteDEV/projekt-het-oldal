@@ -1,62 +1,66 @@
 h2,
 p,
 li {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 p {
-    font-size: 17px;
+  font-size: 17px;
+}
+
+li p {
+  margin-top: 20px;
 }
 
 .list {
-    font-size: 25px;
-    margin: 20px 0;
-    list-style: none;
+  font-size: 25px;
+  margin: 20px 0;
+  list-style: none;
 }
 
 .listText {
-    display: inline;
+  display: inline;
 }
 
 .toggleBtn {
-    font-size: 16px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 13px 20px 13px;
-    outline: 0;
-    border: 1px solid black;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.toggleBtn:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.toggleBtn:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .toggleBtn {
+    padding: 13px 50px 13px;
   }
-  
-  .toggleBtn:after {
-    content: "";
-    background-color: #ffe54c;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-    transition: 0.2s;
-  }
-  
-  .toggleBtn:hover:after {
-    top: 0px;
-    left: 0px;
-  }
-  
-  @media (min-width: 768px) {
-    .toggleBtn {
-      padding: 13px 50px 13px;
-    }
-  }
+}

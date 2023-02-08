@@ -7,14 +7,21 @@ li {
 
 h2 {
   font-size: 40px;
+  font-weight: bold;
+  color: white;
 }
 
 p {
   font-size: 17px;
+  color: white;
 }
 
 li p {
   margin-top: 20px;
+}
+
+.navbar {
+  z-index: 1000;
 }
 
 .list {
@@ -27,13 +34,56 @@ li p {
   display: inline;
 }
 
+.split {
+  height: 100%;
+  /* width: 50%; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 40px;
+}
+
+.textSection {
+  left: 0;
+  width: 55%;
+  background-color: #151515;  
+}
+
+.imgSection {
+  padding-top: 100px;
+  right: 0;
+  width: 45%;
+  background-position: top;
+  background-size: auto 100%;
+}
+#sideImg1{
+  background-image: url(kepek/ai.jpg);
+}
+#sideImg3 {
+  background-image: url(kepek/robot.png);
+}
+#sideImg2 {
+  background-image: url(kepek/doctor.png);
+}
+#sideImg4 {
+  background-image: url(kepek/all_seeing_eye.png);
+}
+#sideImg5 {
+  background-image: url(kepek/god.png);
+}
+
+button {
+  color: #151515;
+}
+
 .toggleBtn {
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
   padding: 13px 20px 13px;
   outline: 0;
-  border: 1px solid black;
+  border: 1px solid white;
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
@@ -71,9 +121,4 @@ li p {
   width: 290px;
   margin-right: 50px;
   padding-bottom: 250px;
-}
-
-body
-{
-  
 }
